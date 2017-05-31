@@ -407,7 +407,7 @@ label{
 .formulaire2{
 	display: flex;
 	flex-direction: column;
-	height: 500px;
+	height: 505px;
 	width: 60%;
 	border-radius: 7px;
 	background-color: #FFD700;
