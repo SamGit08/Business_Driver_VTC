@@ -14,6 +14,6 @@
      <ul class="foot2">
        <li><a href="index.php?p=aeroport">trajet aeroport</a></li>
        <li><a href="index.php?p=mise_a_disposition">votre chauffeur pour 24H</a></li>
-       <li><a href="index.php?p=long_trajet">longs trajets</a></li>
+       <li><a href="#">longs trajets</a></li>
      </ul>
 </div>
