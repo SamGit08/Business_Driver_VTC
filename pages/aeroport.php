@@ -165,7 +165,6 @@
   </div>
 </div>
 <?php require 'mode_paiement.php'; ?>
-<?php require 'footer.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="../js/bd.js"></script>
