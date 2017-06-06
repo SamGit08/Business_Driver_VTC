@@ -19,24 +19,26 @@
         <label for="go">Depart*:</label>
         <input type="text" name="departAe" value="" id="go" required="" placeholder="entrez votre lieu de depart"><label for="selection" id='choix1'>ou aeroport:</label>
         <select value="choisir un aeroport" name="aeroportAeD">
-          <option id="cdg"value="cdg">Paris/Roissy-Charles deGaulle</option>
+          <option id="cdg"value="cdg">Paris/Roissy-Charles de Gaulle</option>
           <option id="aeroportOrly" value="2">Paris/Orly</option>
-          <option id="beauvaisAero" value="3">Aeroport Beauvais</option>
+          <option id="beauvaisAero" value="3">Aéroport Beauvais</option>
         </select><br>
         <section id="vol">
-          <label id="terminal" for="terminaux">terminal:</label>
+          <label id="terminal" for="terminaux">Terminal</label>
           <select class="terminaux" name="aeroport">
-            <option class="orly" value="sud">sud</option>
-            <option class="orly" value="ouest">ouest</option>
+            <option class="orly" value="sud">Sud</option>
+            <option class="orly" value="ouest">Ouest</option>
             <option class="charles"value="1">1</option>
             <option class="charles" value="2A">2A</option>
             <option class="charles" value="2C">2C</option>
             <option class="charles" value="2D">2D</option>
+            <option class="charles" value="2E">2E</option>
             <option class="charles" value="2F">2F</option>
             <option class="charles" value="2G">2G</option>
             <option class="charles" value="3">3</option>
             <option class="beauvais" value="T1">T1</option>
             <option class="beauvais" value="T2">T2</option>
+            <option class="beauvais" value="exu">ST Ex</option>
           </select>
         </section>
       </div>
@@ -45,33 +47,34 @@
         <input type="text" name="arriveeAe" value="" id="arrivee" placeholder="entrez votre lieu d'arrivée">
         <label for="selection" id='choix2'>ou aeroport:</label>
         <select class="two" name="aeroportAeA" id='selection'>
-          <option value="1" class="charles">Paris/Roissy-Charles deGaulle</option>
+          <option value="1" class="charles">Paris/Roissy-Charles de Gaulle</option>
           <option value="2">Paris/Orly</option>
           <option value="3">Aéroport Beauvais</option>
         </select><br>
         <section id="vol">
-          <label id="terminal" for="terminaux">terminal:</label>
+          <label id="terminal" for="terminaux">Terminal</label>
           <select class="terminaux" name="aeroport">
-            <option class="orly" value="sud">sud</option>
-            <option class="orly" value="ouest">ouest</option>
+            <option class="orly" value="sud">Sud</option>
+            <option class="orly" value="ouest">Ouest</option>
             <option class="charles"value="1">1</option>
             <option class="charles" value="2A">2A</option>
             <option class="charles" value="2C">2C</option>
             <option class="charles" value="2D">2D</option>
+            <option class="charles" value="2E">2E</option>
             <option class="charles" value="2F">2F</option>
             <option class="charles" value="2G">2G</option>
             <option class="charles" value="3">3</option>
             <option class="beauvais" value="T1">T1</option>
             <option class="beauvais" value="T2">T2</option>
-            <option class="beauvais" value="exu">ST EXU</option>
+            <option class="beauvais" value="exu">ST Ex</option>
           </select>
         </section>
       </div><br>
        <div class="baby">
-         <label for="">siege bebe/rehausseur</label>
-          <input class='radio' type="radio" name="radio" value="">oui
-          <input class='radio' type="radio" name="radio" value="" checked="">non |
-          <label for=""> nombres de bagages:</label>
+         <label for="">Siège bébé/Réhausseur</label>
+          <input class='radio' type="radio" name="radio" value="">Oui
+          <input class='radio' type="radio" name="radio" value="" checked="">Non |
+          <label for="">Nombres de Baggages</label>
           <select class="bagages" name="">
             <option value="B1">1</option>
             <option value="B2">2</option>
