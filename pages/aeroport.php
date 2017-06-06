@@ -1,7 +1,8 @@
 
   <div id="aile">
     <h1>Trajet aéroport</h1>
-    <form class="formulaire2" method="post" action="../app/form.php"><br>
+    <!-- <form class="formulaire2" method="post" action="../app/form.php"><br> -->
+    <form class="formulaire2" method="post" action="#"><br>
       <h2>Mes informations</h2>
       <div class="">
         <label for="name">Nom*:</label>
@@ -17,28 +18,32 @@
       <h2>Mon trajet</h2>
       <div class="">
         <label for="go">Depart*:</label>
-        <input type="text" name="departAe" value="" id="go" required="" placeholder="entrez votre lieu de depart"><label for="selection" id='choix1'>ou aeroport:</label>
+        <input type="text" name="departAe" value="" id="go" placeholder="entrez votre lieu de depart"><label for="selection" id='choix1'>ou aeroport:</label>
         <select value="choisir un aeroport" name="aeroportAeD">
-          <option id="cdg"value="cdg">Paris/Roissy-Charles de Gaulle</option>
-          <option id="aeroportOrly" value="2">Paris/Orly</option>
-          <option id="beauvaisAero" value="3">Aéroport Beauvais</option>
+          <optgroup label="Votre aéroport">
+            <option id="cdg" value="Paris/Roissy-Charles de Gaulle">Paris/Roissy-Charles de Gaulle</option>
+            <option id="aeroportOrly" value="Paris/Orly">Paris/Orly</option>
+            <option id="beauvaisAero" value="Aéroport Beauvais">Aéroport Beauvais</option>
+          </optgroup>
         </select><br>
         <section id="vol">
           <label id="terminal" for="terminaux">Terminal</label>
-          <select class="terminaux" name="aeroport">
-            <option class="orly" value="sud">Sud</option>
-            <option class="orly" value="ouest">Ouest</option>
-            <option class="charles"value="1">1</option>
-            <option class="charles" value="2A">2A</option>
-            <option class="charles" value="2C">2C</option>
-            <option class="charles" value="2D">2D</option>
-            <option class="charles" value="2E">2E</option>
-            <option class="charles" value="2F">2F</option>
-            <option class="charles" value="2G">2G</option>
-            <option class="charles" value="3">3</option>
-            <option class="beauvais" value="T1">T1</option>
-            <option class="beauvais" value="T2">T2</option>
-            <option class="beauvais" value="exu">ST Ex</option>
+          <select class="terminaux" name="aeroport1">
+            <optgroup label="Votre Terminal">
+              <option value="sud">Sud</option>
+              <option value="ouest">Ouest</option>
+              <option value="1">1</option>
+              <option value="2A">2A</option>
+              <option value="2C">2C</option>
+              <option value="2D">2D</option>
+              <option value="2E">2E</option>
+              <option value="2F">2F</option>
+              <option value="2G">2G</option>
+              <option value="3">3</option>
+              <option value="T1">T1</option>
+              <option value="T2">T2</option>
+              <option value="St Exu">ST Ex</option>
+            </optgroup>
           </select>
         </section>
       </div>
@@ -47,26 +52,30 @@
         <input type="text" name="arriveeAe" value="" id="arrivee" placeholder="entrez votre lieu d'arrivée">
         <label for="selection" id='choix2'>ou aeroport:</label>
         <select class="two" name="aeroportAeA" id='selection'>
-          <option value="1" class="charles">Paris/Roissy-Charles de Gaulle</option>
-          <option value="2">Paris/Orly</option>
-          <option value="3">Aéroport Beauvais</option>
+          <optgroup label="Votre aéroport">
+            <option value="Paris/Roissy-Charles de Gaulle">Paris/Roissy-Charles de Gaulle</option>
+            <option value="Paris/Orly">Paris/Orly</option>
+            <option value="Aéroport de Beauvais">Aéroport de Beauvais</option>
+          </optgroup>
         </select><br>
         <section id="vol">
           <label id="terminal" for="terminaux">Terminal</label>
-          <select class="terminaux" name="aeroport">
-            <option class="orly" value="sud">Sud</option>
-            <option class="orly" value="ouest">Ouest</option>
-            <option class="charles"value="1">1</option>
-            <option class="charles" value="2A">2A</option>
-            <option class="charles" value="2C">2C</option>
-            <option class="charles" value="2D">2D</option>
-            <option class="charles" value="2E">2E</option>
-            <option class="charles" value="2F">2F</option>
-            <option class="charles" value="2G">2G</option>
-            <option class="charles" value="3">3</option>
-            <option class="beauvais" value="T1">T1</option>
-            <option class="beauvais" value="T2">T2</option>
-            <option class="beauvais" value="exu">ST Ex</option>
+          <select class="terminaux" name="aeroport2">
+            <optgroup label="Votre Terminal">
+              <option value="sud">Sud</option>
+              <option value="ouest">Ouest</option>
+              <option value="1">1</option>
+              <option value="2A">2A</option>
+              <option value="2C">2C</option>
+              <option value="2D">2D</option>
+              <option value="2E">2E</option>
+              <option value="2F">2F</option>
+              <option value="2G">2G</option>
+              <option value="3">3</option>
+              <option value="T1">T1</option>
+              <option value="T2">T2</option>
+              <option value="St Exu">ST Ex</option>
+            </optgroup>
           </select>
         </section>
       </div><br>
@@ -75,10 +84,11 @@
           <input class='radio' type="radio" name="radio" value="">Oui
           <input class='radio' type="radio" name="radio" value="" checked="">Non |
           <label for="">Nombres de Baggages</label>
-          <select class="bagages" name="">
-            <option value="B1">1</option>
-            <option value="B2">2</option>
-            <option value="B3">3</option>
+          <select class="baggages" name="nbBaggages">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
        </div>
 
@@ -123,8 +133,35 @@
 </div>
 <div class="confirmation">
   <div class="modal">
+    <h1>Votre reservation</h1>
+    <div class="infosResa">
+      <p>Nom: <?php echo $_POST['nomAe']; ?></p>
+      <p>Prenom: <?php echo $_POST['firstnameAe']; ?></p>
+      <p>Depart de: <?php
+                      if(isset($_POST['departAe'])){
+                        echo $_POST['departAe'];
+                      }else{
+                          echo $_POST['aeroportAeD']."<br>";
+                          echo "Terminal: ".$_POST['aeroport1'];
+                        }
+
+                    ?></p>
+      <p>Arriver à: <?php
+                      if(isset($_POST['arriveeAe'])){
+                        echo $_POST['arriveeAe'];
+                      }else{
+                          echo $_POST['aeroportAeA']."<br>";
+                          echo "Terminal: ".$_POST['aeroport2'];
+                        }
+                    ?></p>
+      <p><?php echo "Heure de départ: ".$_POST['horairesAe']; ?></p>
+      <p><?php echo "Nombres de baggages: ".$_POST['nbBaggages']; ?></p>
+      <p><?php echo "Nombre de personnes: ".$_POST['nbPer']; ?></p>
+    </div>
+    <div class="boutons">
       <button id="annulation" class="boutonModal" type="button" name="button">Annuler</button>
       <button class="boutonModal" type="button" name="button">Confirmer</button>
+    </div>
   </div>
 </div>
 <?php require 'mode_paiement.php'; ?>
