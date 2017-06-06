@@ -121,6 +121,12 @@
      <input type="submit" id='validation'  value="Reservez">
    </form>
 </div>
+<div class="confirmation">
+  <div class="modal">
+      <button id="annulation" class="boutonModal" type="button" name="button">Annuler</button>
+      <button class="boutonModal" type="button" name="button">Confirmer</button>
+  </div>
+</div>
 <?php require 'mode_paiement.php'; ?>
 <?php require 'footer.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
