@@ -40,9 +40,11 @@
 		<input id="submit" type="submit" value="Reservez">
 	</form>
 <video id="film" src="../images/film.mp4" width="1000px" autoplay loop>Optez pour un navigateur plus récent</video>
-<hr>
+<hr id='trainAccueil'>
 	<div class="descriptifP">
-		<div class="iconesDiv">
+		<div class="infoP">
+			<h1>Avantages</h1>
+			<div class="iconesDiv">
 			<div class="modeP anim1">
 				<img class="image" src="../images/telMain.png" width="130px">
 				<p>Le moyen le plus simple de se déplacer
@@ -58,8 +60,8 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	<hr id='trainAccueil'>
 	<?php require 'mode_paiement.php'; ?>
-	<?php require 'footer.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

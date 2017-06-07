@@ -7,9 +7,9 @@
 				<div id="telephone">
 					<img id="tel" src="../images/tel.png"> 01 42 62 42 22
 				</div>
-				<div id="mon_compte">
-				Mon compte
-				</div>
+				<!-- <div id="mon_compte">
+					Mon compte
+				</div> -->
 			</div>
 	</div>
 

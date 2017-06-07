@@ -1,13 +1,23 @@
 $('#reserverClick').click(function(){
 	$('#reserverClick').fadeOut('fast', function(){
 		$('#form').animate({left: '+420'});
-
-
 	});
 });
 
- $(document).ready(function(){
-      $('.parallax').parallax();
+$('#validation').click(function () {
+	$('.confirmation').css('display', 'flex');
+});
 
-// fonctionnalité trajet aeroport
+$('#annulation').click(function () {
+	$('.confirmation').hide('slow');
+});
+// long trajet
+	$('#submitLT').click(function () {
+		$('.confirmationLT').css('display', 'flex');
+		$('.confirmationLT').show();
+	});
+
+	$('#annulationLT').click(function () {
+		$('.confirmationLT').hide('slow');
+
 });
