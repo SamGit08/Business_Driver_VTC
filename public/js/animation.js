@@ -42,15 +42,15 @@ sr.reveal('#disposition', {
   distance: '100px'
 });
 
+sr.reveal('#disposition h1', {
+  duration: 2000,
+  origin: 'left',
+  distance: '100px'
+});
+
 sr.reveal('.formulaire3', {
   duration: 2000,
   origin: 'right',
-  distance: '200px'
-});
-
-sr.reveal('#disposition h1', {
-  duration: 2000,
-  origin: 'top',
   distance: '200px'
 });
 

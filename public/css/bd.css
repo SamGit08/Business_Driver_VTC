@@ -340,7 +340,7 @@ label{
 	width: 495px;
 	border-radius: 7px;
 	background-color: #FFD700;
-	justify-content: start;
+	justify-content: center;
 }
 
 .modal div{
@@ -353,16 +353,10 @@ label{
 	margin-bottom: 10px;
 }
 
-h1{
+.confirmation h1{
 	font-family: 'Cuprum';
 	font-size: 25px;
 }
-
-/*.infosResa{
-		display: flex;
-		flex-direction: column;
-		align-self: center;
-}*/
 
 .boutons{
 	display: flex;
@@ -453,35 +447,43 @@ h1{
 }
 /**************************modal long trajet*******************************************************/
 .confirmationLT{
-	height: 185%;
+	height: 140%;
 	width: 100%;
 	/*display: none;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.9);
-	top: -173px;
+	top: 0;
 	left:0;
 	position: absolute;
 }
+
+.confirmationLT h1{
+	font-family: 'Cuprum';
+	font-size: 25px;
+}
+
 .modalLT{
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 445px;
-	width: 450px;
+	height: 345px;
+	width: 495px;
 	border-radius: 7px;
 	background-color: #FFD700;
-	justify-content: start;
+	justify-content: center;
+	position: relative;
+	bottom: 70px;
 }
-.modalLT h1{
-		font-family: 'Cuprum';
-		font-size: 15px;
-		color: black;
-	}
-	#submitLT{
+
+.modalLT div{
+	display: flex;
+}
+
+	#validationLT{
 		height: 30px;
-		width: 100px;
+		width: 115px;
 		display: flex;
 		align-self: center;
 		cursor: pointer;
@@ -574,12 +576,6 @@ h1{
 		align-items: center;
 }
 
-#disposition h1{
-	color: white;
-	font-family: 'Cuprum';
-	font-size: 50px;
-}
-
 #disposition h2{
 	font-family: 'Cuprum';
 	margin-top: 0;
@@ -589,13 +585,68 @@ h1{
 	width: 300px;
 }
 
+#disposition h1{
+	color: white;
+	font-family: 'Cuprum';
+	font-size: 50px;
+}
+
 .debut{
 	display: flex;
 }
+
+.dispo{
+	height: 500px;
+}
+
+.confirmationMad{
+	height: 140%;
+	width: 100%;
+	/*display: none;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: 0;
+	left:0;
+	position: absolute;
+}
+
+.confirmationMad h1{
+	font-family: 'Cuprum';
+	font-size: 25px;
+}
+
+.modalMad{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 345px;
+	width: 495px;
+	border-radius: 7px;
+	background-color: #FFD700;
+	justify-content: center;
+	position: relative;
+	bottom: 70px;
+}
+
+.modalMad div{
+	display: flex;
+}
+
+	#validationMad{
+		height: 30px;
+		width: 115px;
+		display: flex;
+		align-self: center;
+		cursor: pointer;
+		margin-top: 10px;
+	}
+
 /**********************************modal mise a disposition**********************************/
 #submitMD{
 	height: 30px;
-	width:100px;
+	width:110px;
 	display: flex;
 	align-self: center;
 	cursor: pointer;
@@ -603,7 +654,7 @@ h1{
 }
 /****************************************************footer***********************************/
 .separateur{
-float: left;
+	float: left;
 	background: #ffbf00;
 	height: 100px;
 }
