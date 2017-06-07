@@ -3,7 +3,7 @@
 
 <div id="mesure">
     <h1>Long Trajet</h1>
-    <form class="formulaire" method="post" action="../app/form.php"><br>
+    <form class="formulaire" method="post" action="#"><br>
       <label for="origine">Lieu de prise en charge:</label><br>
       <input type="text" name="origineLt" id="origine"><br>
       <div class="hd">
@@ -39,8 +39,24 @@
       </div>
       <label for="destination">Destination:</label><br>
       <input type="text" name="destinationLt" id="destination"><br>
-      <input id="submit" type="submit" value="Reservez">
+      <input id="submitLT" type="submit" value="Reservez">
     </form>
+    <div class="confirmationLT">
+      <div class="modalLT">
+         <h1>votre reservation</h1>
+          <div class="infosResa">
+     <p>lieu de prise en charge: <?php echo $_POST['origineLt']; ?></p>
+     <p> date : <?php echo $_POST['dateLt']; ?></p>
+     <p>heure: <?php echo $_POST['horairesLt']; ?></p>
+      <p>etapes de votre trajet : <?php echo $_POST['choixLt']; ?></p>
+      <p>votre destination: <?php echo $_POST['destinationLt']; ?></p>
+          </div>
+          <div class="boutons">
+            <button id="annulationLT" class="boutonModal" type="button" name="button">Annuler</button>
+            <button class="boutonModal" type="button" name="button">Confirmer</button>
+          </div>
+      </div>
+    </div>
 </div>
 <?php require 'mode_paiement.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>

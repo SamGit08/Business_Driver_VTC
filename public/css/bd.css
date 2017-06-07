@@ -451,6 +451,42 @@ h1{
 #destination{
 	margin-bottom: 0px;
 }
+/**************************modal long trajet*******************************************************/
+.confirmationLT{
+	height: 185%;
+	width: 100%;
+	/*display: none;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: -173px;
+	left:0;
+	position: absolute;
+}
+.modalLT{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	height: 445px;
+	width: 450px;
+	border-radius: 7px;
+	background-color: #FFD700;
+	justify-content: start;
+}
+.modalLT h1{
+		font-family: 'Cuprum';
+		font-size: 15px;
+		color: black;
+	}
+	#submitLT{
+		height: 30px;
+		width: 100px;
+		display: flex;
+		align-self: center;
+		cursor: pointer;
+		margin-top: 10px;
+	}
 /*************************formulaire aeroport************************************/
 
 #aile h1 {
@@ -556,6 +592,15 @@ h1{
 .debut{
 	display: flex;
 }
+/**********************************modal mise a disposition**********************************/
+#submitMD{
+	height: 30px;
+	width:100px;
+	display: flex;
+	align-self: center;
+	cursor: pointer;
+	margin-top: 10px;
+}
 /****************************************************footer***********************************/
 .separateur{
 float: left;
@@ -569,10 +614,6 @@ float: left;
 	align-items: center;
 	background-color: #ffbf00;
 	position: relative;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .foot2 li{
 	font-family: 'Cuprum';
