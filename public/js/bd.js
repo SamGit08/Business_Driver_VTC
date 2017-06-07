@@ -17,3 +17,12 @@ $('#validation').click(function () {
 $('#annulation').click(function () {
 	$('.confirmation').hide();
 });
+// long trajet
+	$('#submitLT').click(function () {
+		$('.confirmationLT').css('display', 'flex');
+	});
+
+	$('#annulationLT').click(function () {
+		$('.confirmationLT').hide();
+
+});

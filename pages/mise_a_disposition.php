@@ -1,6 +1,6 @@
 <div id="disposition">
     <h1>Mise à disposition</h1>
-    <form class="formulaire3" method="post" action="../app/form.php"><br>
+    <form class="formulaire3" method="post" action="#"><br>
       <label for="origine">Votre adresse:</label><br>
       <input type="text" name="origineMad" id="origine"><br>
       <h2>Début de prise en charge</h2>
@@ -9,7 +9,7 @@
           <label for="date">Date:</label><br>
           <input type="date" name="dateMad" value="" placeholder="jj/mm/aaaa"><br>
           <label for="heure">Horaire:</label>
-          <select class="horaires" name="horairesMad">
+          <select class="horaires" name="horairesMadDebut">
             <option value="06:00">06:00</option>
             <option value="07:00">07:00</option>
             <option value="08:00">08:00</option>
@@ -39,7 +39,7 @@
           <label for="date">Date:</label><br>
           <input type="date" name="dateMadfin" value="" placeholder="jj/mm/aaaa"><br>
           <label for="heure">Horaire:</label>
-          <select class="horaires" name="horairesMad">
+          <select class="horaires" name="horairesMadFin">
             <option value="06:00">06:00</option>
             <option value="07:00">07:00</option>
             <option value="08:00">08:00</option>
@@ -62,8 +62,25 @@
           </select><br>
         </div>
       </div>
-      <input id="submit" type="submit" value="Reservez">
+      <input id="submitMD" type="submit" value="Reservez">
     </form>
+    <div class="confirmationLT">
+      <div class="modalLT">
+         <h2>votre reservation</h2>
+          <div class="infosResa">
+             <p>votre adresse : <?php echo $_POST['origineMad']; ?></p>
+             <p>prise en charge : <?php echo $_POST['dateMad']; ?></p>
+             <p>heure du debut : <?php echo $_POST['horairesMadDebut']; ?></p>
+             <p>date de fin : <?php echo $_POST['dateMadfin']; ?></p>
+             <p>heure de fin : <?php echo $_POST['horairesMadFin']; ?></p>
+
+          </div>
+          <div class="boutons">
+            <button id="annulationLT" class="boutonModal" type="button" name="button">Annuler</button>
+            <button class="boutonModal" type="button" name="button">Confirmer</button>
+          </div>
+      </div>
+    </div>
 </div>
 <div class="descriptifP">
   <h1>Les modes de paiements</h1>
