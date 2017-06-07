@@ -62,8 +62,9 @@
           </select><br>
         </div>
       </div>
-      <input id="submitMD" type="submit" value="Reservez">
+      <input type="submit" id='validationMad'  value="Reservez">
     </form>
+<<<<<<< HEAD
     <div class="confirmationLT">
       <div class="modalLT">
          <h1 class="titreReservation">votre reservation</h1>
@@ -74,11 +75,60 @@
              <p>date de fin : <?php echo $_POST['dateMadfin']; ?></p>
              <p>heure de fin : <?php echo $_POST['horairesMadFin']; ?></p>
 
+=======
+    </div>
+    <div class="confirmationMad">
+      <div class="modalMad">
+        <h1>Votre reservation</h1>
+        <form class="" action="aeroport.php" method="post">
+          <div class="">
+            <div class="label">
+              <label for="Nom">Nom:</label>
+              <input type="text" name="" value="" placeholder="entrer votre nom">
+            </div>
+            <div class="label">
+              <label for="Nom">Prenom:</label>
+              <input type="text" name="" value="" placeholder="entrer votre prenom">
+            </div>
           </div>
-          <div class="boutons">
-            <button id="annulationLT" class="boutonModal" type="button" name="button">Annuler</button>
-            <button class="boutonModal" type="button" name="button">Confirmer</button>
+          <div class="">
+            <div class="label">
+              <label for="Nom">Telephone:</label>
+              <input type="text" name="" value="" placeholder="entrer votre numero">
+            </div>
+            <div class="label">
+              <label for="Nom">Depart de:</label>
+              <?php echo '<input type="text" name="" value="'.$_POST['origineMad'].'" disabled="disabled">'; ?>
+            </div>
+>>>>>>> 68c54d7810ab728528549c52f8cabb7766df4168
           </div>
+          <div class="">
+            <div class="label">
+              <label for="Nom">Debut de la prise en charge:</label>
+              <?php
+              if(isset($_POST['dateMad']) && isset($_POST['horairesMadDebut'])){
+                echo '<input type="text" name="" value="'.$_POST['dateMad'].', à '.$_POST['horairesMadDebut'].' h" disabled="disabled">';
+              }else{
+                echo '<input type="text" name="" value="" disabled="disabled">';
+              }
+              ?>
+            </div>
+            <div class="label">
+              <label for="Nom">Fin de la prise en charge:</label>
+              <?php
+              if(isset($_POST['dateMadfin']) && isset($_POST['horairesMadFin'])){
+                echo '<input type="text" name="" value="'.$_POST['dateMadfin'].', à '.$_POST['horairesMadFin'].' h" disabled="disabled">';
+              }else{
+                echo '<input type="text" name="" value="" disabled="disabled">';
+              }
+              ?>
+            </div>
+          </div>
+        </form>
+        <div class="boutons">
+          <button id="annulationMad" class="boutonModal" type="button" name="button">Annuler</button>
+          <button class="boutonModal" type="button" name="button">Confirmer</button>
+        </div>
       </div>
     </div>
 </div>
