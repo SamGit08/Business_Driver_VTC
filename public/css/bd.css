@@ -320,7 +320,7 @@ label{
 /*********************** Modal - Confirmation de reservation ****************************/
 
 .confirmation{
-	height: 160%;
+	height: 140%;
 	width: 100%;
 	/*display: none;*/
 	display: flex;
@@ -336,11 +336,21 @@ label{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 500px;
-	width: 400px;
+	height: 405px;
+	width: 495px;
 	border-radius: 7px;
 	background-color: #FFD700;
 	justify-content: start;
+}
+
+.modal div{
+	display: flex;
+}
+
+.label{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
 }
 
 h1{
@@ -348,19 +358,22 @@ h1{
 	font-size: 25px;
 }
 
-.infosResa{
+/*.infosResa{
 		display: flex;
 		flex-direction: column;
 		align-self: center;
-}
+}*/
 
 .boutons{
 	display: flex;
+	flex-direction: column;
 }
 
 .boutonModal{
 	height: 30px;
-	margin-left: 15px;
+	width: 150px;
+	margin-bottom: 5px;
+	/*margin-left: 5px;*/
 }
 /************************ formulaire long trajet ********************/
 

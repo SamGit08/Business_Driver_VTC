@@ -1,7 +1,6 @@
 
   <div id="aile">
     <h1>Trajet aéroport</h1>
-    <!-- <form class="formulaire2" method="post" action="../app/form.php"><br> -->
     <form class="formulaire2" method="post" action="#"><br>
       <h2>Mes informations</h2>
       <div class="">
@@ -81,8 +80,10 @@
       </div><br>
        <div class="baby">
          <label for="">Siège bébé/Réhausseur</label>
-          <input class='radio' type="radio" name="radio" value="">Oui
-          <input class='radio' type="radio" name="radio" value="" checked="">Non |
+         <select class="" name="rehausseur">
+           <option value="non">Non</option>
+           <option value="oui">Oui</option>
+         </select>
           <label for="">Nombres de Baggages</label>
           <select class="baggages" name="nbBaggages">
             <option value="0">0</option>
@@ -134,30 +135,48 @@
 <div class="confirmation">
   <div class="modal">
     <h1>Votre reservation</h1>
-    <div class="infosResa">
-      <p>Nom: <?php echo $_POST['nomAe']; ?></p>
-      <p>Prenom: <?php echo $_POST['firstnameAe']; ?></p>
-      <p>Depart de: <?php
-                      if(isset($_POST['departAe'])){
-                        echo $_POST['departAe'];
-                      }else{
-                          echo $_POST['aeroportAeD']."<br>";
-                          echo "Terminal: ".$_POST['aeroport1'];
-                        }
-
-                    ?></p>
-      <p>Arriver à: <?php
-                      if(isset($_POST['arriveeAe'])){
-                        echo $_POST['arriveeAe'];
-                      }else{
-                          echo $_POST['aeroportAeA']."<br>";
-                          echo "Terminal: ".$_POST['aeroport2'];
-                        }
-                    ?></p>
-      <p><?php echo "Heure de départ: ".$_POST['horairesAe']; ?></p>
-      <p><?php echo "Nombres de baggages: ".$_POST['nbBaggages']; ?></p>
-      <p><?php echo "Nombre de personnes: ".$_POST['nbPer']; ?></p>
-    </div>
+      <form class="infosResa" action="aeroport.php" method="post">
+      <div class="">
+        <div class="label">
+          <label for="Nom">Nom:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['nomAe'].'" disabled="disabled">'; ?>
+        </div>
+        <div class="label">
+          <label for="Nom">Prenom:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['firstnameAe'].'" disabled="disabled">'; ?>
+        </div>
+      </div>
+      <div class="">
+        <div class="label">
+          <label for="Nom">Depart de:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['departAe'].'" disabled="disabled">'; ?>
+        </div>
+        <div class="label">
+          <label for="Nom">Arrivee à:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['arriveeAe'].'" disabled="disabled">'; ?>
+        </div>
+      </div>
+      <div class="">
+        <div class="label">
+          <label for="Nom">Horaire de depart:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['horairesAe'].'" disabled="disabled">'; ?>
+        </div>
+        <div class="label">
+          <label for="Nom">Nombres de personnes:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['nbPer'].'" disabled="disabled">'; ?>
+        </div>
+      </div>
+      <div class="">
+        <div class="label">
+          <label for="Nom">Nombres de baggages:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['nbBaggages'].'" disabled="disabled">'; ?>
+        </div>
+        <div class="label">
+          <label for="Nom">Réhausseur et/ou siège bébé:</label>
+          <?php echo '<input type="text" name="" value="'.$_POST['rehausseur'].'" disabled="disabled">'; ?>
+        </div>
+      </div>
+      </form>
     <div class="boutons">
       <button id="annulation" class="boutonModal" type="button" name="button">Annuler</button>
       <button class="boutonModal" type="button" name="button">Confirmer</button>
@@ -165,6 +184,7 @@
   </div>
 </div>
 <?php require 'mode_paiement.php'; ?>
+<?php require '../app/form.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="../js/bd.js"></script>

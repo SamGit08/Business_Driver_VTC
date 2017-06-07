@@ -4,12 +4,6 @@ $('#reserverClick').click(function(){
 	});
 });
 
-//  $(document).ready(function(){
-//       $('.parallax').parallax();
-//
-// // fonctionnalité trajet aeroport
-// });
-
 $('#validation').click(function () {
 	$('.confirmation').css('display', 'flex');
 });
