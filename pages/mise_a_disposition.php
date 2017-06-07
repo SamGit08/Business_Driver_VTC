@@ -66,7 +66,7 @@
     </form>
     <div class="confirmationLT">
       <div class="modalLT">
-         <h1>votre reservation</h1>
+         <h1 class="titreReservation">votre reservation</h1>
           <div class="infosResa">
              <p>votre adresse : <?php echo $_POST['origineMad']; ?></p>
              <p>prise en charge le : <?php echo $_POST['dateMad']; ?></p>

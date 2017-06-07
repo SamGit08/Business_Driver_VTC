@@ -43,7 +43,7 @@
     </form>
     <div class="confirmationLT">
       <div class="modalLT">
-         <h1>votre reservation</h1>
+         <h1 class="titreReservation">votre reservation</h1>
           <div class="infosResa">
      <p>lieu de prise en charge: <?php echo $_POST['origineLt']; ?></p>
      <p> date : <?php echo $_POST['dateLt']; ?></p>

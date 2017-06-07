@@ -588,6 +588,11 @@ h1{
 	cursor: pointer;
 	margin-top: 10px;
 }
+.titreReservation{
+	color: black;
+	font-family: 'Cuprum';
+	font-size: 25px;
+}
 /****************************************************footer***********************************/
 .separateur{
 float: left;
