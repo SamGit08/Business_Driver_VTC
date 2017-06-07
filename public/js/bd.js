@@ -15,14 +15,15 @@ $('#validation').click(function () {
 });
 
 $('#annulation').click(function () {
-	$('.confirmation').hide();
+	$('.confirmation').hide('slow');
 });
 // long trajet
 	$('#submitLT').click(function () {
 		$('.confirmationLT').css('display', 'flex');
+		$('.confirmationLT').show();
 	});
 
 	$('#annulationLT').click(function () {
-		$('.confirmationLT').hide();
+		$('.confirmationLT').hide('slow');
 
 });

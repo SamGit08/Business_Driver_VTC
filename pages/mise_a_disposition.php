@@ -66,10 +66,10 @@
     </form>
     <div class="confirmationLT">
       <div class="modalLT">
-         <h2>votre reservation</h2>
+         <h1>votre reservation</h1>
           <div class="infosResa">
              <p>votre adresse : <?php echo $_POST['origineMad']; ?></p>
-             <p>prise en charge : <?php echo $_POST['dateMad']; ?></p>
+             <p>prise en charge le : <?php echo $_POST['dateMad']; ?></p>
              <p>heure du debut : <?php echo $_POST['horairesMadDebut']; ?></p>
              <p>date de fin : <?php echo $_POST['dateMadfin']; ?></p>
              <p>heure de fin : <?php echo $_POST['horairesMadFin']; ?></p>
