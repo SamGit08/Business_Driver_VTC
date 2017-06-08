@@ -158,6 +158,19 @@ height: 30px;
 	border-radius: 7px;
 }
 
+button{
+	border: solid black 2px;
+	border-radius: 7px;
+	font-weight: bold;
+	background-color: #FFD700;
+	height: 35px;
+}
+
+button:hover{
+	transition: 0.8s;
+	background-color:  #ffec60;
+}
+
 #aile{
 	width: 100%;
 	height: 600px;
@@ -192,22 +205,16 @@ height: 30px;
 	margin-left: 30px;
 }
 
-#form input{
-	margin-left: 5px;
-	margin-bottom: 5px;
-}
-
 input{
-	width: 200px;
-	height: 20px;
-	margin: 2px;
-
+	border: solid grey 1px;
+	border-radius: 7px;
+	padding-left: 5px;
+	height: 25px;
 }
 
-#form select{
-	display: flex;
-	align-self: flex-start;
-	margin-left: 85px;
+select{
+	border: solid grey 1px;
+	border-radius: 7px;
 }
 
 #form h1{
@@ -235,20 +242,42 @@ label{
 	align-items: center;
 	text-align: center;
 	height: 325px;
-	width: 380px;
+	width: 430px;
 	border-radius: 7px;
 	background-color: #FFD700;
 	z-index: 30;
 	position: absolute;
 	top: 220px;
-	left: -400px;
+	left: -500px;
 	font-weight: bold;
 	padding-top: 10px;
+}
+
+#form h2{
+	font-family: 'Cuprum';
+	font-size: 25px;
 }
 
 #form h1{
 	font-family: 'Cuprum';
 	font-size: 25px;
+}
+
+#validationAc{
+		width: 80px;
+		height: 35px;
+		display: flex;
+		align-self: center;
+		cursor: pointer;
+		margin-top: 10px;
+}
+
+.boutonsAc{
+		margin-top: 10px;
+}
+
+.accueil{
+	display: flex;
 }
 
 .horaires{
@@ -317,13 +346,24 @@ label{
 	background-color: white;
 }
 
-/*********************** Modal - Confirmation de reservation ****************************/
+fieldset{
+	border: solid grey 1px;
+	border-radius: 7px;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+h2{
+	margin-bottom: 2px;
+	margin-top: 10px;
+}
+
+/*********************** Modal - Confirmation de reservation aeroport ****************************/
 
 .confirmation{
 	height: 140%;
 	width: 100%;
-	/*display: none;*/
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.9);
@@ -358,17 +398,6 @@ label{
 	font-size: 25px;
 }
 
-.boutons{
-	display: flex;
-	flex-direction: column;
-}
-
-.boutonModal{
-	height: 30px;
-	width: 150px;
-	margin-bottom: 5px;
-	/*margin-left: 5px;*/
-}
 /************************ formulaire long trajet ********************/
 
 #mesure{
@@ -385,8 +414,8 @@ label{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 260px;
-	width: 370px;
+	height: 340px;;
+	width: 405px;
 	border-radius: 7px;
 	background-color: #FFD700;
 	font-weight: bold;
@@ -397,6 +426,12 @@ label{
 	color: white;
 	font-family: 'Cuprum';
 	font-size: 50px;
+}
+
+#mesure h2{
+	font-family: 'Cuprum';
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
 .radio{
@@ -438,7 +473,7 @@ label{
 
 .radio2{
 	display: flex;
-	width: 3px;
+	width: 10px;
 	justify-content: flex-end;
 }
 
@@ -446,49 +481,19 @@ label{
 	margin-bottom: 0px;
 }
 /**************************modal long trajet*******************************************************/
-.confirmationLT{
-	height: 140%;
-	width: 100%;
-	/*display: none;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.9);
-	top: 0;
-	left:0;
-	position: absolute;
-}
 
-.confirmationLT h1{
-	font-family: 'Cuprum';
-	font-size: 25px;
-}
-
-.modalLT{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 345px;
-	width: 495px;
-	border-radius: 7px;
-	background-color: #FFD700;
-	justify-content: center;
-	position: relative;
-	bottom: 70px;
-}
-
-.modalLT div{
-	display: flex;
-}
-
-	#validationLT{
-		height: 30px;
-		width: 115px;
+#validationLT{
+		width: 80px;
+		height: 35px;
 		display: flex;
 		align-self: center;
 		cursor: pointer;
 		margin-top: 10px;
-	}
+}
+
+.boutonsLT{
+		margin-top: 10px;
+}
 /*************************formulaire aeroport************************************/
 
 #aile h1 {
@@ -504,8 +509,8 @@ label{
 .formulaire2{
 	display: flex;
 	flex-direction: column;
-	height: 510px;
-	width: 60%;
+	height: 460px;
+	width: 590px;
 	border-radius: 7px;
 	background-color: #FFD700;
 	font-weight: bold;
@@ -518,15 +523,21 @@ label{
 	display: inline;
 	align-items: flex-end;
 }
+
 .formulaire2 h3{
 	  text-align: center;
 }
+
+.boutons{
+	margin-top: 10px;
+}
+
 #validation{
-	height: 30px;
-	width: 120px;
+	width: 80px;
+	height: 35px;
 	cursor: pointer;
+	margin-top: 10px;
 	text-align: center;
-	margin-top: 15px;
 }
 
 #email{
@@ -566,8 +577,8 @@ label{
 .formulaire3{
 		display: flex;
 		flex-direction: column;
-		height: 300px;
-		width: 370px;
+		height: 275px;
+		width: 340px;
 		border-radius: 7px;
 		background-color: #FFD700;
 		font-weight: bold;
@@ -580,9 +591,10 @@ label{
 	font-family: 'Cuprum';
 	margin-top: 0;
 }
-
-#disposition hr{
+ hr{
+	border: solid black 1px;
 	width: 300px;
+	margin-bottom: 0px;
 }
 
 #disposition h1{
@@ -599,59 +611,19 @@ label{
 	height: 500px;
 }
 
-.confirmationMad{
-	height: 140%;
-	width: 100%;
-	/*display: none;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.9);
-	top: 0;
-	left:0;
-	position: absolute;
+.boutonsMad{
+	margin-top: 10px;
 }
 
-.confirmationMad h1{
-	font-family: 'Cuprum';
-	font-size: 25px;
-}
-
-.modalMad{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 345px;
-	width: 495px;
-	border-radius: 7px;
-	background-color: #FFD700;
-	justify-content: center;
-	position: relative;
-	bottom: 70px;
-}
-
-.modalMad div{
-	display: flex;
-}
-
-	#validationMad{
-		height: 30px;
-		width: 115px;
+#validationMad{
+		width: 80px;
+		height: 35px;
 		display: flex;
 		align-self: center;
 		cursor: pointer;
 		margin-top: 10px;
 	}
 
-/**********************************modal mise a disposition**********************************/
-#submitMD{
-	height: 30px;
-	width:110px;
-	display: flex;
-	align-self: center;
-	cursor: pointer;
-	margin-top: 10px;
-}
 /****************************************************footer***********************************/
 .separateur{
 	float: left;
