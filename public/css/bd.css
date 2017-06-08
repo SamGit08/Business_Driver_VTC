@@ -624,6 +624,23 @@ h2{
 		margin-top: 10px;
 	}
 
+<<<<<<< HEAD
+=======
+/**********************************modal mise a disposition**********************************/
+#submitMD{
+	height: 30px;
+	width:110px;
+	display: flex;
+	align-self: center;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.titreReservation{
+	color: black;
+	font-family: 'Cuprum';
+	font-size: 25px;
+}
+>>>>>>> 960f8663f9b004c7613b66bb7e664dc2adc265c4
 /****************************************************footer***********************************/
 .separateur{
 	float: left;
