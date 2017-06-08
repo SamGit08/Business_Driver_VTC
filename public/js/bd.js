@@ -4,24 +4,58 @@ $('#reserverClick').click(function(){
 	});
 });
 
+//Accueil transport
+$(window).load(function () {
+	$('.boutonsAc').hide();
+})
+$('#validationAc').click(function() {
+	$('.boutonsAc').show('slow');
+	$(this).hide('slow');
+});
+
+$('#annulationAc').click(function () {
+	$('.boutonsAc').hide('slow');
+	$('#validationAc').show('slow');
+});
+
 // trajet aeroport
-$('#validation').click(function () {
-	$('.confirmation').css('display', 'flex');
+$(window).load(function () {
+	$('.boutons').hide();
+})
+$('#validation').click(function() {
+	$('.boutons').show('slow');
+	$(this).hide('slow');
 });
 
 $('#annulation').click(function () {
-	$('.confirmation').hide('slow');
+	$('.boutons').hide('slow');
+	$('#validation').show('slow');
+});
+
+//mise à disposition
+$(window).load(function () {
+	$('.boutonsMad').hide();
+})
+$('#validationMad').click(function() {
+	$('.boutonsMad').show('slow');
+	$(this).hide('slow');
+});
+
+$('#annulationMad').click(function () {
+	$('.boutonsMad').hide('slow');
+	$('#validationMad').show('slow');
 });
 
 // long trajet
-	$(window).ready(function () {
-		$('confirmationMad').hide();
-	})
-	$('#validationMad').click(function () {
-		// $('.confirmationMad').css('display', 'flex');
-		$('.confirmationMad').show('slow');
-	});
+$(window).load(function () {
+	$('.boutonsLT').hide();
+})
+$('#validationLT').click(function() {
+	$('.boutonsLT').show('slow');
+	$(this).hide('slow');
+});
 
-	$('#annulationMad').click(function () {
-		$('.confirmationMad').hide('slow');
+$('#annulationLT').click(function () {
+	$('.boutonsLT').hide('slow');
+	$('#validationLT').show('slow');
 });

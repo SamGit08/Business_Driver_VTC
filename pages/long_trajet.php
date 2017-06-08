@@ -1,49 +1,41 @@
-
-
-
 <div id="mesure">
     <h1>Long Trajet</h1>
     <form class="formulaire" method="post" action="#"><br>
-      <label for="origine">Lieu de prise en charge:</label><br>
-      <input type="text" name="origineLt" id="origine"><br>
-      <div class="hd">
-        <label for="date">Date:</label>
-        <input type="date" name="dateLt" value="" placeholder="jj/mm/aaaa">
-        <label for="heure">Horaire:</label>
-        <select class="horaires" name="horairesLt">
-          <option value="06:00">06:00</option>
-          <option value="07:00">07:00</option>
-          <option value="08:00">08:00</option>
-          <option value="09:00">09:00</option>
-          <option value="10:00">10:00</option>
-          <option value="11:00">11:00</option>
-          <option value="12:00">12:00</option>
-          <option value="13:00">13:00</option>
-          <option value="14:00">14:00</option>
-          <option value="15:00">15:00</option>
-          <option value="16:00">16:00</option>
-          <option value="17:00">17:00</option>
-          <option value="18:00">18:00</option>
-          <option value="19:00">19:00</option>
-          <option value="20:00">20:00</option>
-          <option value="21:00">21:00</option>
-          <option value="22:00">22:00</option>
-          <option value="23:00">23:00</option>
-          <option value="00:00">00:00</option>
-        </select><br>
+      <h2>Mes informations</h2>
+      <fieldset>
+        <label for="origine">Lieu de prise en charge:</label>
+        <input type="text" name="origineLT" id="origine"><br>
+        <div class="hd">
+          <label for="date">Date:</label>
+          <input type="date" name="dateLT" value="" placeholder="jj/mm/aaaa">
+          <label for="heure">Horaire:</label>
+          <input type="text" name="horairesLT" value="">
+        </div>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label for="">Etape dans votre trajet:</label>
+        <select class="" name="etapeLT">
+          <optgroup label="etape">
+            <option value="non">Non</option>
+            <option value="oui">Oui</option>
+          </optgroup>
+        </select>
+        <label for="destination">Destination:</label>
+        <input type="text" name="destinationLT" id="destination">
+      </fieldset>
+      <button type="button" id="validationLT">Reserver</button>
+      <div class="boutonsLT">
+        <button class="boutonModal" type="button" name="button">Confirmer</button>
+        <button id="annulationLT" class="boutonModal" type="button" name="button">Annuler</button>
       </div>
-      <label for="">Etape dans votre trajet:</label>
-      <div class="radio2">
-        <input type="radio" name="choixLt" value="oui">Oui
-        <input type="radio" name="choixLt" value="non" checked>Non
-      </div>
-      <label for="destination">Destination:</label><br>
-      <input type="text" name="destinationLt" id="destination"><br>
-      <input id="submitLT" type="submit" value="Reservez">
     </form>
+<<<<<<< HEAD
+  </div>
+=======
     <div class="confirmationLT">
       <div class="modalLT">
-         <h1>votre reservation</h1>
+         <h1 class="titreReservation">votre reservation</h1>
           <div class="infosResa">
      <p>lieu de prise en charge: <?php echo $_POST['origineLt']; ?></p>
      <p> date : <?php echo $_POST['dateLt']; ?></p>
@@ -58,6 +50,7 @@
       </div>
     </div>
 </div>
+>>>>>>> 960f8663f9b004c7613b66bb7e664dc2adc265c4
 <?php require 'mode_paiement.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

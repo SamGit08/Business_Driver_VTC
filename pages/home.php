@@ -7,37 +7,34 @@
 	EN UN CLICK
 	</div>
 	<form id="form" method="post" action="../app/form.php">
-		<br>
 		<h1>Entrez votre trajet</h1>
-		<label for="origine">Partir de:</label><br>
-		<input type="text" name="origineAc" id="origine"><br>
-		<label for="destination">Aller à:</label><br>
-		<input type="text" name="destinationAc" id="destination"><br>
-		<label for="date">Date:</label><br>
-		<input type="date" name="dateAc" value="" placeholder="jj/mm/aaaa"><br>
-		<label for="heure">Horaire:</label>
-		<select name="horairesAc">
-			<option value="06:00">06:00</option>
-			<option value="07:00">07:00</option>
-			<option value="08:00">08:00</option>
-			<option value="09:00">09:00</option>
-			<option value="10:00">10:00</option>
-			<option value="11:00">11:00</option>
-			<option value="12:00">12:00</option>
-			<option value="13:00">13:00</option>
-			<option value="14:00">14:00</option>
-			<option value="15:00">15:00</option>
-			<option value="16:00">16:00</option>
-			<option value="17:00">17:00</option>
-			<option value="18:00">18:00</option>
-			<option value="19:00">19:00</option>
-			<option value="20:00">20:00</option>
-			<option value="21:00">21:00</option>
-			<option value="22:00">22:00</option>
-			<option value="23:00">23:00</option>
-			<option value="00:00">00:00</option>
-		</select><br><br>
-		<input id="submit" type="submit" value="Reservez">
+		<hr>
+		<div class="accueil">
+			<fieldset>
+				<label for="origine">Partir de:</label>
+				<input type="text" name="origineAc" id="origine"><br>
+				<label for="destination">Aller à:</label>
+				<input type="text" name="destinationAc" id="destination"><br>
+				<label for="date">Date:</label>
+				<input type="date" name="dateAc" value="" placeholder="jj/mm/aaaa"><br>
+				<label for="heure">Horaire:</label>
+				<input type="text" name="horairesAc" value="">
+			</fieldset>
+			<fieldset>
+				<h2>Coordonnées</h2>
+				<label for="origine">Nom:</label>
+				<input type="text" name="nomAc" id="origine"><br>
+				<label for="origine">Prenom:</label>
+				<input type="text" name="prenomAc" id="origine"><br>
+				<label for="origine">Telephone:</label>
+				<input type="text" name="TelAc" id="origine"><br>
+			</fieldset>
+		</div>
+		<button type="button" id="validationAc">Reserver</button>
+		<div class="boutonsAc">
+			<button class="boutonModal" type="button" name="button">Confirmer</button>
+			<button id="annulationAc" class="boutonModal" type="button" name="button">Annuler</button>
+		</div>
 	</form>
 <video id="film" src="../images/film.mp4" width="1000px" autoplay loop>Optez pour un navigateur plus récent</video>
 <hr id='trainAccueil'>

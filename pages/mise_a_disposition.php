@@ -3,36 +3,29 @@
     <form class="formulaire3" method="post" action="#"><br>
       <label for="origine">Votre adresse:</label><br>
       <input type="text" name="origineMad" id="origine"><br>
-      <h2>Début de prise en charge</h2>
-      <div class="hd">
-        <div class="debut">
-          <label for="date">Date:</label><br>
-          <input type="date" name="dateMad" value="" placeholder="jj/mm/aaaa"><br>
-          <label for="heure">Horaire:</label>
-          <select class="horaires" name="horairesMadDebut">
-            <option value="06:00">06:00</option>
-            <option value="07:00">07:00</option>
-            <option value="08:00">08:00</option>
-            <option value="09:00">09:00</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="12:00">12:00</option>
-            <option value="13:00">13:00</option>
-            <option value="14:00">14:00</option>
-            <option value="15:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-            <option value="19:00">19:00</option>
-            <option value="20:00">20:00</option>
-            <option value="21:00">21:00</option>
-            <option value="22:00">22:00</option>
-            <option value="23:00">23:00</option>
-            <option value="00:00">00:00</option>
-          </select><br>
+      <fieldset>
+        <h2>Début de prise en charge</h2>
+        <div class="hd">
+          <div class="debut">
+            <label for="date">Date:</label><br>
+            <input type="date" name="dateMad" value="" placeholder="jj/mm/aaaa"><br>
+            <label for="heure">Horaire:</label>
+            <input type="text" name="horairesMadDebut" value="">
+          </div>
         </div>
-      </div>
+      </fieldset>
       <hr>
+<<<<<<< HEAD
+      <fieldset>
+        <h2>Fin de prise en charge</h2>
+        <div class="hd">
+          <div class="debut">
+            <label for="date">Date:</label><br>
+            <input type="date" name="dateMadfin" value="" placeholder="jj/mm/aaaa"><br>
+            <label for="heure">Horaire:</label>
+            <input type="text" name="horairesMadFin" value="">
+          </div>
+=======
       <h2>Fin de prise en charge</h2>
       <div class="hd">
         <div class="debut">
@@ -64,6 +57,18 @@
       </div>
       <input type="submit" id='validationMad'  value="Reservez">
     </form>
+<<<<<<< HEAD
+    <div class="confirmationLT">
+      <div class="modalLT">
+         <h1 class="titreReservation">votre reservation</h1>
+          <div class="infosResa">
+             <p>votre adresse : <?php echo $_POST['origineMad']; ?></p>
+             <p>prise en charge le : <?php echo $_POST['dateMad']; ?></p>
+             <p>heure du debut : <?php echo $_POST['horairesMadDebut']; ?></p>
+             <p>date de fin : <?php echo $_POST['dateMadfin']; ?></p>
+             <p>heure de fin : <?php echo $_POST['horairesMadFin']; ?></p>
+
+=======
     </div>
     <div class="confirmationMad">
       <div class="modalMad">
@@ -88,6 +93,7 @@
               <label for="Nom">Depart de:</label>
               <?php echo '<input type="text" name="" value="'.$_POST['origineMad'].'" disabled="disabled">'; ?>
             </div>
+>>>>>>> 68c54d7810ab728528549c52f8cabb7766df4168
           </div>
           <div class="">
             <div class="label">
@@ -115,10 +121,16 @@
         <div class="boutons">
           <button id="annulationMad" class="boutonModal" type="button" name="button">Annuler</button>
           <button class="boutonModal" type="button" name="button">Confirmer</button>
+>>>>>>> 960f8663f9b004c7613b66bb7e664dc2adc265c4
         </div>
+      </fieldset>
+      <button type="button" id='validationMad'>Reserver</button>
+      <div class="boutonsMad">
+        <button class="boutonModal" type="button" name="button">Confirmer</button>
+        <button id="annulationMad" class="boutonModal" type="button" name="button">Annuler</button>
       </div>
-    </div>
-</div>
+    </form>
+  </div>
 <div class="descriptifP">
   <h1>Les modes de paiements</h1>
   <div class="iconesDiv">
