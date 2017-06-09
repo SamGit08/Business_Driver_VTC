@@ -33,18 +33,6 @@
       </div>
     </form>
   </div>
-<div class="descriptifP">
-  <h1>Les modes de paiements</h1>
-  <div class="iconesDiv">
-    <div class="modeP anim1">
-      <i class="fa fa-credit-card-alt fa-5x" aria-hidden="true"></i>
-      <p>par carte</p>
-    </div>
-    <div class="modeP anim3">
-      <img class=icone src="../images/icone_cheque.png" alt="">
-      <p>par chèque</p>
-    </div>
-  </div>
-</div>
+  <?php require 'mode_paiement.php'; ?>
 <script type="text/javascript" src="../public/js/animation.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

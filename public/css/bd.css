@@ -224,6 +224,22 @@ select{
 label{
 	font-family: 'Cuprum';
 }
+.tarif{
+		font-family: 'Cuprum';
+		display: flex;
+		justify-content: center;
+}
+ .tarif ul{
+	 display: flex;
+	 flex-direction: column;
+	 padding-left: 10px;
+	 margin-right: 20px;
+ }
+
+ li{
+	 display: flex;
+	 justify-content: flex-start;
+ }
 
 #reserverClick{
 	font-family: 'Cuprum';
