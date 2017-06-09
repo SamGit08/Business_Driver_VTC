@@ -1,6 +1,6 @@
 # Business_Driver_VTC
 <h2>Cahier des charges fonctionnelles</h2>
-<ul>
+<ol>
   <li>Présentation de la société</li>
   <li>Présentation du transfert aéroport</li>
   <li>Présentation des longs trajet</li>
@@ -10,4 +10,4 @@
   <li>Réservation</li>
   <li>Envoi de la reservation du client par mail</li>
   <li>Confirmation par mail de la réception et de la réservation</li>
-</ul>
+</ol>
