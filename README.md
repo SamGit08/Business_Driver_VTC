@@ -1,5 +1,5 @@
 # Business_Driver_VTC
-<h2>Cahier des charges fonctionnel</h2>
+<h2>Cahier des charges fonctionnelles</h2>
 <ul>
   <li>Présentation de la société</li>
   <li>Présentation du transfert aéroport</li>
