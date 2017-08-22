@@ -23,11 +23,11 @@
 			<fieldset>
 				<h2>Coordonnées</h2>
 				<label for="origine">Nom:</label>
-				<input type="text" name="nomAc" id="origine"><br>
+				<input type="text" required="" name="nomAc" id="origine"><br>
 				<label for="origine">Prenom:</label>
-				<input type="text" name="prenomAc" id="origine"><br>
+				<input type="text" required="" name="prenomAc" id="origine"><br>
 				<label for="origine">Telephone:</label>
-				<input type="text" name="TelAc" id="origine"><br>
+				<input type="text" required="" name="TelAc" id="origine"><br>
 			</fieldset>
 		</div>
 		<button type="button" id="validationAc">Reserver</button>
